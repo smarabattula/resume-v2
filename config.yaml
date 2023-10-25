@@ -56,7 +56,7 @@ params:
   title: "Hugo Profile"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/images/favicon.png"
+  favicon: "./images/favicon.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -121,7 +121,7 @@ params:
     title: "Sasank"
     subtitle: "A passionate Web, ML/AI and cloud developer."
     content: "I like to solve complex problems & provide impactful solutions using these three pillars!"
-    image: # /images/hero.svg
+    image: # ./images/hero.svg
     bottomImage:
       enable: true
     roundImage: true # Make hero image circular | default false
@@ -145,7 +145,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "./images/me.png"
     content: |-
               I'm a current graduate student, pursing my Masters in Computer Science. I like to build ML models and use them for better use with cloud technologies. I am into web dev and now I'm exploring the evolving technologies in web apps!
 
@@ -313,7 +313,7 @@ params:
 
         url: https://github.com/expertiza/expertiza
 
-        # image: /images/achievment.jpg
+        # image: ./images/achievment.jpg
 
       - title: JP Morgan Chase Code for Good Cause 2019 Finalist
         content: Finalist in JP Morgan Chase’s Code for Good Hackathon, where an end-to-end android application was delivered for a Non-Profit organization to facilitate volunteering work for their users.
@@ -331,7 +331,7 @@ params:
     items:
       - title: Sync-Ends Library
         content: A Python Library that can detect any change across APIs & instantly send notifications on Slack, Teams & Email.
-        image: /images/git_repo.png
+        image: ./images/git_repo.png
         # featured:
         #   name: Git
         #   link: https://github.com/smarabattula/Sync-Ends
@@ -345,7 +345,7 @@ params:
 
       - title: Online Bookshop App
         content: a RESTful bookshop app with Ruby on Rails, SQLite, & GitHub pipelines, with features like login, payment gateway, transaction history, user reviews & URL restrictions.
-        image: /images/git_repo.png
+        image: ./images/git_repo.png
         # featured:
         #   name: Demo
         #   link: https://django-converter.herokuapp.com
@@ -360,7 +360,7 @@ params:
 
       - title: KAB Systems LLC Website
         content: A static website for KAB Systems LLC using Hugo CMS and applied CI/CD pipelines via Git. Deployed on AWS and Netlify.
-        image: /images/git_repo.png
+        image: ./images/git_repo.png
         featured:
           name: Demo
           link: https://courageous-lamington-12bca5.netlify.app/
@@ -375,7 +375,7 @@ params:
 
       - title: Automobile Service Management System
         content: a car servicing Java app featuring employee management, service scheduling, customer cart and invoicing.
-        image: /images/git_repo.png
+        image: ./images/git_repo.png
         # featured:
         #   name: Demo
         #   link: https://courageous-lamington-12bca5.netlify.app/
@@ -390,7 +390,7 @@ params:
 
       - title: Blueberry Segmentation
         content: A blueberry segmentation dataset using Computer Vision techniques, Segment Anything Model (SAM) to identify area of Blueberries in a given image.
-        image: /images/git_repo.png
+        image: ./images/git_repo.png
         # featured:
         #   name: Demo
         #   link: https://courageous-lamington-12bca5.netlify.app/
@@ -405,7 +405,7 @@ params:
 
       - title: Terrain Identification
         content: A deep learning model to identify & classify different terrains from inertial measurement unit(IMU) time series data.
-        image: /images/git_repo.png
+        image: ./images/git_repo.png
         # featured:
         #   name: Demo
         #   link: https://courageous-lamington-12bca5.netlify.app/
@@ -420,7 +420,7 @@ params:
 
       - title: Disaster Tweet Analysis
         content: An NLP model to verify if a given tweet implies disaster or not
-        image: /images/git_repo.png
+        image: ./images/git_repo.png
         # featured:
         #   name: Demo
         #   link: https://courageous-lamington-12bca5.netlify.app/
@@ -435,7 +435,7 @@ params:
 
       - title: Histopathologic Cancer Detection
         content: A deep learning model (CNNs,VGG19) to identify metastatic cancer in colored image patches, using Transfer Learning and Neural Networks
-        image: /images/git_repo.png
+        image: ./images/git_repo.png
         # featured:
         #   name: Demo
         #   link: https://courageous-lamington-12bca5.netlify.app/
@@ -450,7 +450,7 @@ params:
 
       - title: Text Search Engine
         content: NLP based search engine that retrieves top 5 similar articles to input, imitates StackOverFlow search functionality.
-        image: /images/git_repo.png
+        image: ./images/git_repo.png
         # featured:
         #   name: Demo
         #   link: https://courageous-lamington-12bca5.netlify.app/
