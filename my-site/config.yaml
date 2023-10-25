@@ -56,7 +56,7 @@ params:
   title: "Hugo Profile"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/images/favicon.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -73,14 +73,14 @@ params:
 
   theme:
     # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    defaultTheme: "dark" # dark
 
   font:
-    fontSize: 1rem # default: 1rem
+    fontSize: 1.2rem # default: 1rem
     fontWeight: 400 # default: 400
     lineHeight: 1.5 # default: 1.5
     textAlign: left # default: left
-
+    fontFamily: Roboto
   # color preference
   # color:
   #   textColor:
@@ -102,9 +102,9 @@ params:
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Sasank M" # Brand name for the brand | default is the title variable
-    disableSearch: false
+    showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Sasank" # Brand name for the brand | default is the title variable
+    disableSearch: true
     searchPlaceholder: "Search anything"
     menus:
       disableAbout: false
@@ -118,13 +118,13 @@ params:
   hero:
     enable: true
     intro: "Hello there! I am"
-    title: "Sasank Marabattula"
+    title: "Sasank"
     subtitle: "A passionate Web, ML/AI and cloud developer."
     content: "I like to solve complex problems & provide impactful solutions using these three pillars!"
-    image: /images/hero.svg
+    image: # /images/hero.svg
     bottomImage:
       enable: true
-    # roundImage: true # Make hero image circular | default false
+    roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
@@ -149,21 +149,46 @@ params:
     content: |-
               I'm a current graduate student, pursing my Masters in Computer Science. I like to build ML models and use them for better use with cloud technologies. I am into web dev and now I'm exploring the evolving technologies in web apps!
 
-
     skills:
       enable: true
       title: "Here are a few programming languages and tools I've been working on:"
       items:
-        - "Python, Java, Ruby"
-        - "C, C++, Shell"
-        - "Node.js, Rails"
-        - "React, AngularJS"
-        - "SAP HANA, SQLite"
-        - "MySQL, MongoDB"
-        - "NLP, Computer Vision"
-        - "Applied ML"
-        - "GCP, AWS, Docker"
-        - "Git, Github Actions"
+        - python
+        - java
+        - r
+        - matlab
+        - ruby
+        - cpp
+        - html
+        - css
+        - javascript
+        - bootstrap
+        - php
+        - react
+        - nodejs
+        - rails
+        - mongodb
+        - mysql
+        - sqlite
+        - aws
+        - gcp
+        - docker
+        - kubernetes
+        - netlify
+        - pytorch
+        - tensorflow
+        - git
+        - postman
+        - vscode
+
+
+        # - "React, AngularJS"
+        # - "SAP HANA, SQLite"
+        # - "MySQL, MongoDB"
+        # - "NLP, Computer Vision"
+        # - "Applied ML"
+        # - "GCP, AWS, Docker"
+        # - "Git, Github Actions"
 
   # Experience
   experience:
