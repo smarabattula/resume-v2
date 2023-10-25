@@ -1,0 +1,515 @@
+baseURL:
+languageCode: "en-us"
+title: "Sasank's Portfolio"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  # main:
+  #   - identifier: blog
+  #     name: Blog
+  #     title: Blog posts
+  #     url: /blogs
+  #     weight: 1
+  #   - identifier: gallery
+  #     name: Gallery
+  #     title: Blog posts
+  #     url: /gallery
+  #     weight: 2
+  #   #Dropdown menu
+  #   # - identifier: dropdown
+  #   #   title: Example dropdown menu
+  #   #   name: Dropdown
+  #   #   weight: 3
+  #   # - identifier: dropdown1
+  #   #   title: example dropdown 1
+  #   #   name: example 1
+  #   #   url: /#
+  #   #   parent: dropdown
+  #   #   weight: 1
+  #   # - identifier: dropdown2
+  #   #   title: example dropdown 2
+  #   #   name: example 2
+  #   #   url: /#
+  #   #   parent: dropdown
+  #   #   weight: 2
+
+params:
+  title: "Hugo Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/images/favicon.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    defaultTheme: "dark" # dark
+
+  font:
+    fontSize: 1.2rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+    fontFamily: Roboto
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Sasank" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    searchPlaceholder: "Search anything"
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hello there! I am"
+    title: "Sasank"
+    subtitle: "A passionate Web, ML/AI and cloud developer."
+    content: "I like to solve complex problems & provide impactful solutions using these three pillars!"
+    image: # /images/hero.svg
+    bottomImage:
+      enable: true
+    roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "/my-resume.pdf"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-2x fa-github
+          url: https://github.com/smarabattula
+        - icon: fab fa-2x fa-linkedin
+          url: https://linkedin.com/in/smarabattula
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+              I'm a current graduate student, pursing my Masters in Computer Science. I like to build ML models and use them for better use with cloud technologies. I am into web dev and now I'm exploring the evolving technologies in web apps!
+
+    skills:
+      enable: true
+      title: "Here are a few programming languages and tools I've been working on:"
+      items:
+        - python
+        - java
+        - r
+        - matlab
+        - ruby
+        - cpp
+        - html
+        - css
+        - javascript
+        - bootstrap
+        - php
+        - react
+        - nodejs
+        - rails
+        - mongodb
+        - mysql
+        - sqlite
+        - aws
+        - gcp
+        - docker
+        - kubernetes
+        - netlify
+        - pytorch
+        - tensorflow
+        - git
+        - postman
+        - vscode
+
+
+        # - "React, AngularJS"
+        # - "SAP HANA, SQLite"
+        # - "MySQL, MongoDB"
+        # - "NLP, Computer Vision"
+        # - "Applied ML"
+        # - "GCP, AWS, Docker"
+        # - "Git, Github Actions"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+
+      - job: "Data Science Intern"
+        company: "USDA ARS SCINet"
+        companyUrl: none
+        date: "Jun 2023 - Aug 2023"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I worked as a research data science intern by collaborating with a lab based in Utah.
+        content: |
+          - Analyzed drone images for genotypes yield prediction using data mining & image processing.
+          - Developed a neural network model using CNN and VGG19 to automate stem density calculation in wheatgrass images, potentially reducing resources costs by 80%.
+
+      - job: "Software App Developer"
+        company: "Deloitte"
+        companyUrl: "https://www2.deloitte.com/"
+        date: "Jun 2019 - Jul 2022"
+        info:
+          enable: true
+          content: My role was a culmination of App Development, Database Administration and Data Engineer.
+
+        featuredLink:
+          enable: false
+          url: "https://www2.deloitte.com/"
+        content: |
+          I worked here for 3 years, while implementing key Software practices into workspace
+          - Designed and implemented efficient data pipelines on Deloitte's personnel data warehouses using BODS and SDI Flowgraphs and generating essential KPI metrics using HANA SQL DBMS. This resulted in a 30% reduction in budget and project time and significant cost savings for the firm, while maintaining within Customer SLA.
+          - Automated data loads & test plans with Shell Scripts, Python, SAP API's and ETL mechanisms with SQL procedures which eliminated hierarchy refresh redundancy and saved 50% of manual efforts.
+          - Deployed effective smoke test cases, averaging 10+ bugs per app which expedited pre-production resolution and effective development. Also migrated various legacy apps to SAP HANA Cloud.
+
+      - job: "Software Intern"
+        company: "Deloitte"
+        companyUrl: "https://www2.deloitte.com/"
+        date: "Jan 2019 - Jun 2019"
+        featuredLink:
+          enable: false
+          url: "#"
+        content: |
+          I worked as an Intern at Deloitte and focused more on learning SQL constructs, SAP tech stack and Python integration into my workflow.
+          - Developed a Python automation script with XML parsing and HANA tools, automating the generation of base source objects for hierarchical fields, reducing 60% manual documentation efforts.
+          - Designed a text search engine using Python, NLP for fetching most similar records from a large dataset.
+
+      - job: "Graduate Student Worker"
+        company: "NCSU ARoS Lab"
+        companyUrl: "https://research.ece.ncsu.edu/aros/"
+        date: "Sep 2023 - Now"
+        info:
+          enable: true
+          content: This is part of my independent study, I'm currently volunteering for the lab.
+
+        content: |
+          I'm assisting the staff in the lab with technical expertise in ML and Data Science capacity. Currently working on blueberry segmentation problem.
+          - Computed a segmentation dataset using Computer Vision techniques, Segment Anything Model (SAM) to obtain blueberry masks in images.
+          - Deployed a segmentation model to predict blueberry masks using RoboFlow MLOps, with 98% accuracy & mAP.
+
+      - job: "Graduate Student Assistant"
+        company: "PAL Research Group"
+        companyUrl: "https://faculty.cnr.ncsu.edu/lokendrapal/research/"
+        date: "Oct 2023 - Now"
+        info:
+          enable: true
+          content: This is a part time assistantship position at NCSU
+
+        content: |
+          I'm assisting the staff in the lab with technical expertise in ML and Data Science capacity. Currently working on data mining problems to research over waste management.
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Masters in Computer Science"
+        school:
+          name: "North Carolina State University, Raleigh"
+          url: "https://www.csc.ncsu.edu/"
+        date: "2022 - 2024"
+        GPA: "4.0 out of 4.0"
+        content: |-
+          Coursework:
+            - Design & Analysis of Algorithms, Database Management Concepts & System, Automated Learning Data Analysis
+            - Object Oriented Design & Development, Neural Networks, Experimental Statistics, Cloud Engg, Software Engg
+      - title: "Bachelor of Engineering in Computer Science and Engineering"
+        school:
+          name: "University College of Engineering, Osmania University, Hyderabad, India"
+          url: "https://www.uceou.edu/dept-cse.php"
+        date: "2015 - 2019"
+        GPA: "9.04 out of 10.0"
+        content: |-
+          Coursework:
+          - Data Structures, Operating Systems, Web Development, Programming Languages Paradigms, Object Oriented Programming, DBMS
+          - Cloud Computing, Distributed Systems, Computer Networks, Internet Protocols, Data Science, Data Mining, Artificial Intelligence
+
+          Extracurricular Activities:
+            - Organizer in various technical and cultural tests in UCEOU
+            - Member of YOUVA, an NGO established in UCEOU that helps the society for better cause
+
+
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Open Source Contributions to Expertiza
+        content: Expertiza is a web application where students can submit and peer-review learning objects (articles, code, web sites, etc). It is used in select courses at NC State and by professors at several other colleges and universities.
+        links:
+          - icon: fab fa-2x fa-github
+            url: https://github.com/expertiza/expertiza
+
+        url: https://github.com/expertiza/expertiza
+
+        # image: /images/achievment.jpg
+
+      - title: JP Morgan Chase Code for Good Cause 2019 Finalist
+        content: Finalist in JP Morgan Chase’s Code for Good Hackathon, where an end-to-end android application was delivered for a Non-Profit organization to facilitate volunteering work for their users.
+
+      - title: Deloitte Work Award
+        content: Led end-to-end development of a large-scale project, overseeing design architecture and peer management, and received recognition and an award for exceptional contributions.
+
+      - title: Certifications
+        content: Completed certifications in Cloud Computing, Data Science, Data Mining, Machine Learning & Deep Learning courses.
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Sync-Ends Library
+        content: A Python Library that can detect any change across APIs & instantly send notifications on Slack, Teams & Email.
+        image: /images/git_repo.png
+        # featured:
+        #   name: Git
+        #   link: https://github.com/smarabattula/Sync-Ends
+        badges:
+          - "Python"
+          - "Github"
+          - "Github actions"
+        links:
+          - icon: fab fa-2x fa-github
+            url: https://github.com/smarabattula/Sync-Ends
+
+      - title: Online Bookshop App
+        content: a RESTful bookshop app with Ruby on Rails, SQLite, & GitHub pipelines, with features like login, payment gateway, transaction history, user reviews & URL restrictions.
+        image: /images/git_repo.png
+        # featured:
+        #   name: Demo
+        #   link: https://django-converter.herokuapp.com
+        badges:
+          - "Ruby"
+          - "Ruby on Rails"
+          - "SQLite"
+          - "Github"
+        links:
+          - icon: fab fa-2x fa-github
+            url: https://github.com/smarabattula/Online-Book-Shop
+
+      - title: KAB Systems LLC Website
+        content: A static website for KAB Systems LLC using Hugo CMS and applied CI/CD pipelines via Git. Deployed on AWS and Netlify.
+        image: /images/git_repo.png
+        featured:
+          name: Demo
+          link: https://courageous-lamington-12bca5.netlify.app/
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+          - "AWS"
+        links:
+          - icon: fab fa-2x fa-gitlab
+            url: https://gitlab.com/smaraba/kab-systems
+
+      - title: Automobile Service Management System
+        content: a car servicing Java app featuring employee management, service scheduling, customer cart and invoicing.
+        image: /images/git_repo.png
+        # featured:
+        #   name: Demo
+        #   link: https://courageous-lamington-12bca5.netlify.app/
+        badges:
+          - "Java"
+          - "SQL"
+          - "SQLPlus"
+          - "Github"
+        links:
+          - icon: fab fa-2x fa-github
+            url: https://github.com/smarabattula/autor
+
+      - title: Blueberry Segmentation
+        content: A blueberry segmentation dataset using Computer Vision techniques, Segment Anything Model (SAM) to identify area of Blueberries in a given image.
+        image: /images/git_repo.png
+        # featured:
+        #   name: Demo
+        #   link: https://courageous-lamington-12bca5.netlify.app/
+        badges:
+          - "Python"
+          - "SAM"
+          - "Roboflow"
+          - "Computer Vision"
+        links:
+          - icon: fab fa-2x fa-github
+            url: https://github.com/smarabattula/aros-blueberry
+
+      - title: Terrain Identification
+        content: A deep learning model to identify & classify different terrains from inertial measurement unit(IMU) time series data.
+        image: /images/git_repo.png
+        # featured:
+        #   name: Demo
+        #   link: https://courageous-lamington-12bca5.netlify.app/
+        badges:
+          - "Python"
+          - "Tensorflow"
+          - "Time Series Analysis"
+          - "Keras"
+        links:
+          - icon: fab fa-2x fa-github
+            url: https://github.com/smarabattula/IMU-terrain-classification
+
+      - title: Disaster Tweet Analysis
+        content: An NLP model to verify if a given tweet implies disaster or not
+        image: /images/git_repo.png
+        # featured:
+        #   name: Demo
+        #   link: https://courageous-lamington-12bca5.netlify.app/
+        badges:
+          - "Python"
+          - "Data Mining"
+          - "NLP"
+          - "SKLearn"
+        links:
+          - icon: fab fa-2x fa-github
+            url: https://github.com/smarabattula/Verification-of-Disaster-Tweet-Authenticity
+
+      - title: Histopathologic Cancer Detection
+        content: A deep learning model (CNNs,VGG19) to identify metastatic cancer in colored image patches, using Transfer Learning and Neural Networks
+        image: /images/git_repo.png
+        # featured:
+        #   name: Demo
+        #   link: https://courageous-lamington-12bca5.netlify.app/
+        badges:
+          - "Python"
+          - "TensorFlow"
+          - "VGG19"
+          - "Transfer Learning"
+        links:
+          - icon: fab fa-2x fa-github
+            url: https://github.com/smarabattula/histopathologic-cancer-detection
+
+      - title: Text Search Engine
+        content: NLP based search engine that retrieves top 5 similar articles to input, imitates StackOverFlow search functionality.
+        image: /images/git_repo.png
+        # featured:
+        #   name: Demo
+        #   link: https://courageous-lamington-12bca5.netlify.app/
+        badges:
+          - "Python"
+          - "NLP"
+          - "search engine"
+        links:
+          - icon: fab fa-2x fa-github
+            url: https://github.com/smarabattula/histopathologic-cancer-detection
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Feel free to contact me on my email here! I'm open for positions!
+    email: smaraba@ncsu.edu
+    btnName: Hire me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/smarabattula
+      linkedin: https://linkedin.com/in/smarabattula
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
