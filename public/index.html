@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="generator" content="Hugo 0.111.3"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/images/favicon.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:title" content="Sasank&#39;s Portfolio" />
+<meta property="og:description" content="Text about my cool site" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" /><meta property="og:site_name" content="Hugo Profile" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Sasank&#39;s Portfolio"/>
+<meta name="twitter:description" content="Text about my cool site"/>
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    *
+    {
+      font-family: Roboto !important;
+
+    }
+    body{
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+      }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px var(--background-color);
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+
+    .wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #eee;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.house {
+  cursor: pointer;
+  font-size: 30px;
+  font-family: 'Oak', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+
+  .bg-fill {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+
+  text {
+    fill: #333;
+    transition: fill 0.3s ease-in;
+  }
+
+  &:hover, &.active {
+    .bg-fill {
+      opacity: 1;
+    }
+    text {
+      fill: #333;
+    }
+  }
+}
+</style>
+
+<meta name="description" content=Text&#32;about&#32;my&#32;cool&#32;site>
+<link rel="stylesheet" href="/css/index.css" media="all">
+<link rel="stylesheet" href="/css/projects.css" media="all">
+
+
+<script defer src="/fontawesome-5/all-5.15.4.js"></script>
+
+  <title>
+Sasank&#39;s Portfolio
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+<style>
+:root {
+  --main-text-light: #343a40;
+  --accent-light: #24b0ef;
+  --border-color-light: #24b0ef;
+ 
+  --main-text-dark: #ffffff;
+  --accent-dark: #64ffda;
+  --border-color-dark: #64ffda;
+}
+
+.btn-logo {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+
+  background: transparent;  
+  color: var(--main-text-light);  
+
+  &:after,
+  &:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+  }
+
+  &:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid var(--border-color-light);  
+    border-left: 5px solid var(--border-color-light);
+  }
+
+  &:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid var(--border-color-light);
+    border-right: 5px solid var(--border-color-light);
+  }
+
+  &:hover {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: var(--accent-light);  
+
+    &:before,
+    &:after {
+      width: 100%;
+      height: 100%;
+      border-color: var(--accent-light);  
+    }
+  }
+}
+
+ 
+.dark .btn-logo {
+  color: var(--main-text-dark);
+  background: transparent;
+  &:after {
+    border-top: 5px solid var(--border-color-dark);  
+    border-left: 5px solid var(--border-color-dark);
+  }
+
+  &:before {
+    border-bottom: 5px solid var(--border-color-dark);
+    border-right: 5px solid var(--border-color-dark);
+  }
+
+  &:hover {
+    color: var(--accent-dark);  
+    &:before,
+    &:after {
+      width: 100%;
+      height: 100%;
+      border-color: var(--accent-dark);  
+    }
+  }
+}
+
+
+</style>
+
+<header>
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="data-container navbar-brand primary-font text-wrap" href="/">
+                
+                <span class="btn-logo">Sasank</span>
+
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="hero" class="py-5 align-middle">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+                <h3 class="subtitle1">
+                    Hello there! I am
+                </h3>
+
+                <img src="images/animated_head.svg"  alt="Sasank Marabattula! " />
+                <h3>
+                    A passionate Web, ML/AI and cloud developer.
+                </h3>
+                <p class="hero-content">
+                    I like to solve complex problems &amp; provide impactful solutions using these three pillars!
+                </p>
+                <div class="row">
+                    <div class="col-auto h-100">
+                        
+                        <a href="/my-resume.pdf" class="btn" ZgotmplZ
+			  >
+                            Resume
+                        </a>
+                        
+                    </div>
+                    <div class="col-auto px-0 h-100"><span>
+    
+    <span class="px-1">
+        <a href="https://github.com/smarabattula" target="_blank" class="btn social-icon">
+            <i class="fab fa-2x fa-github"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://linkedin.com/in/smarabattula" target="_blank" class="btn social-icon">
+            <i class="fab fa-2x fa-linkedin"></i>
+        </a>
+    </span>
+    
+
+    
+</span></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
+                        <img src=""
+                            class="img-thumbnail mx-auto rounded-circle"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="hero-bottom-svg d-md-block d-lg-block d-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="201" height="201" viewBox="0 0 201 201">
+            <g id="Group_1168" data-name="Group 1168" transform="translate(-384 -1392)">
+                <rect id="Rectangle_2206" data-name="Rectangle 2206" width="12" height="2" rx="1"
+                    transform="translate(391 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2271" data-name="Rectangle 2271" width="12" height="2" rx="1"
+                    transform="translate(391 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2238" data-name="Rectangle 2238" width="12" height="2" rx="1"
+                    transform="translate(391 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2278" data-name="Rectangle 2278" width="12" height="2" rx="1"
+                    transform="translate(391 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2222" data-name="Rectangle 2222" width="12" height="2" rx="1"
+                    transform="translate(391 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2272" data-name="Rectangle 2272" width="12" height="2" rx="1"
+                    transform="translate(391 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2241" data-name="Rectangle 2241" width="12" height="2" rx="1"
+                    transform="translate(391 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2288" data-name="Rectangle 2288" width="12" height="2" rx="1"
+                    transform="translate(391 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2214" data-name="Rectangle 2214" width="12" height="2" rx="1"
+                    transform="translate(499 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2289" data-name="Rectangle 2289" width="12" height="2" rx="1"
+                    transform="translate(499 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2256" data-name="Rectangle 2256" width="12" height="2" rx="1"
+                    transform="translate(499 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2290" data-name="Rectangle 2290" width="12" height="2" rx="1"
+                    transform="translate(499 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2231" data-name="Rectangle 2231" width="12" height="2" rx="1"
+                    transform="translate(499 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2291" data-name="Rectangle 2291" width="12" height="2" rx="1"
+                    transform="translate(499 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2257" data-name="Rectangle 2257" width="12" height="2" rx="1"
+                    transform="translate(499 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2292" data-name="Rectangle 2292" width="12" height="2" rx="1"
+                    transform="translate(499 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2210" data-name="Rectangle 2210" width="12" height="2" rx="1"
+                    transform="translate(445 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2279" data-name="Rectangle 2279" width="12" height="2" rx="1"
+                    transform="translate(445 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2248" data-name="Rectangle 2248" width="12" height="2" rx="1"
+                    transform="translate(445 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2280" data-name="Rectangle 2280" width="12" height="2" rx="1"
+                    transform="translate(445 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2226" data-name="Rectangle 2226" width="12" height="2" rx="1"
+                    transform="translate(445 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2281" data-name="Rectangle 2281" width="12" height="2" rx="1"
+                    transform="translate(445 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2249" data-name="Rectangle 2249" width="12" height="2" rx="1"
+                    transform="translate(445 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2293" data-name="Rectangle 2293" width="12" height="2" rx="1"
+                    transform="translate(445 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2219" data-name="Rectangle 2219" width="12" height="2" rx="1"
+                    transform="translate(553 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2310" data-name="Rectangle 2310" width="12" height="2" rx="1"
+                    transform="translate(553 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2262" data-name="Rectangle 2262" width="12" height="2" rx="1"
+                    transform="translate(553 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2311" data-name="Rectangle 2311" width="12" height="2" rx="1"
+                    transform="translate(553 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2232" data-name="Rectangle 2232" width="12" height="2" rx="1"
+                    transform="translate(553 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2312" data-name="Rectangle 2312" width="12" height="2" rx="1"
+                    transform="translate(553 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2263" data-name="Rectangle 2263" width="12" height="2" rx="1"
+                    transform="translate(553 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2313" data-name="Rectangle 2313" width="12" height="2" rx="1"
+                    transform="translate(553 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2209" data-name="Rectangle 2209" width="12" height="2" rx="1"
+                    transform="translate(418 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2273" data-name="Rectangle 2273" width="12" height="2" rx="1"
+                    transform="translate(418 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2242" data-name="Rectangle 2242" width="12" height="2" rx="1"
+                    transform="translate(418 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2282" data-name="Rectangle 2282" width="12" height="2" rx="1"
+                    transform="translate(418 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2223" data-name="Rectangle 2223" width="12" height="2" rx="1"
+                    transform="translate(418 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2274" data-name="Rectangle 2274" width="12" height="2" rx="1"
+                    transform="translate(418 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2243" data-name="Rectangle 2243" width="12" height="2" rx="1"
+                    transform="translate(418 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2294" data-name="Rectangle 2294" width="12" height="2" rx="1"
+                    transform="translate(418 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2217" data-name="Rectangle 2217" width="12" height="2" rx="1"
+                    transform="translate(526 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2314" data-name="Rectangle 2314" width="12" height="2" rx="1"
+                    transform="translate(526 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2258" data-name="Rectangle 2258" width="12" height="2" rx="1"
+                    transform="translate(526 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2315" data-name="Rectangle 2315" width="12" height="2" rx="1"
+                    transform="translate(526 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2233" data-name="Rectangle 2233" width="12" height="2" rx="1"
+                    transform="translate(526 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2316" data-name="Rectangle 2316" width="12" height="2" rx="1"
+                    transform="translate(526 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2259" data-name="Rectangle 2259" width="12" height="2" rx="1"
+                    transform="translate(526 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2317" data-name="Rectangle 2317" width="12" height="2" rx="1"
+                    transform="translate(526 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2211" data-name="Rectangle 2211" width="12" height="2" rx="1"
+                    transform="translate(472 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2295" data-name="Rectangle 2295" width="12" height="2" rx="1"
+                    transform="translate(472 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2250" data-name="Rectangle 2250" width="12" height="2" rx="1"
+                    transform="translate(472 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2296" data-name="Rectangle 2296" width="12" height="2" rx="1"
+                    transform="translate(472 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2227" data-name="Rectangle 2227" width="12" height="2" rx="1"
+                    transform="translate(472 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2297" data-name="Rectangle 2297" width="12" height="2" rx="1"
+                    transform="translate(472 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2251" data-name="Rectangle 2251" width="12" height="2" rx="1"
+                    transform="translate(472 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2298" data-name="Rectangle 2298" width="12" height="2" rx="1"
+                    transform="translate(472 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2221" data-name="Rectangle 2221" width="12" height="2" rx="1"
+                    transform="translate(580 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2318" data-name="Rectangle 2318" width="12" height="2" rx="1"
+                    transform="translate(580 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2264" data-name="Rectangle 2264" width="12" height="2" rx="1"
+                    transform="translate(580 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2319" data-name="Rectangle 2319" width="12" height="2" rx="1"
+                    transform="translate(580 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2236" data-name="Rectangle 2236" width="12" height="2" rx="1"
+                    transform="translate(580 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2320" data-name="Rectangle 2320" width="12" height="2" rx="1"
+                    transform="translate(580 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2265" data-name="Rectangle 2265" width="12" height="2" rx="1"
+                    transform="translate(580 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2321" data-name="Rectangle 2321" width="12" height="2" rx="1"
+                    transform="translate(580 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2207" data-name="Rectangle 2207" width="12" height="2" rx="1"
+                    transform="translate(396 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2270" data-name="Rectangle 2270" width="12" height="2" rx="1"
+                    transform="translate(396 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2239" data-name="Rectangle 2239" width="12" height="2" rx="1"
+                    transform="translate(396 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2283" data-name="Rectangle 2283" width="12" height="2" rx="1"
+                    transform="translate(396 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2224" data-name="Rectangle 2224" width="12" height="2" rx="1"
+                    transform="translate(396 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2275" data-name="Rectangle 2275" width="12" height="2" rx="1"
+                    transform="translate(396 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2244" data-name="Rectangle 2244" width="12" height="2" rx="1"
+                    transform="translate(396 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2299" data-name="Rectangle 2299" width="12" height="2" rx="1"
+                    transform="translate(396 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2215" data-name="Rectangle 2215" width="12" height="2" rx="1"
+                    transform="translate(504 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2300" data-name="Rectangle 2300" width="12" height="2" rx="1"
+                    transform="translate(504 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2252" data-name="Rectangle 2252" width="12" height="2" rx="1"
+                    transform="translate(504 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2301" data-name="Rectangle 2301" width="12" height="2" rx="1"
+                    transform="translate(504 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2228" data-name="Rectangle 2228" width="12" height="2" rx="1"
+                    transform="translate(504 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2302" data-name="Rectangle 2302" width="12" height="2" rx="1"
+                    transform="translate(504 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2253" data-name="Rectangle 2253" width="12" height="2" rx="1"
+                    transform="translate(504 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2303" data-name="Rectangle 2303" width="12" height="2" rx="1"
+                    transform="translate(504 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2212" data-name="Rectangle 2212" width="12" height="2" rx="1"
+                    transform="translate(450 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2284" data-name="Rectangle 2284" width="12" height="2" rx="1"
+                    transform="translate(450 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2245" data-name="Rectangle 2245" width="12" height="2" rx="1"
+                    transform="translate(450 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2285" data-name="Rectangle 2285" width="12" height="2" rx="1"
+                    transform="translate(450 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2229" data-name="Rectangle 2229" width="12" height="2" rx="1"
+                    transform="translate(450 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2286" data-name="Rectangle 2286" width="12" height="2" rx="1"
+                    transform="translate(450 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2246" data-name="Rectangle 2246" width="12" height="2" rx="1"
+                    transform="translate(450 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2304" data-name="Rectangle 2304" width="12" height="2" rx="1"
+                    transform="translate(450 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2218" data-name="Rectangle 2218" width="12" height="2" rx="1"
+                    transform="translate(558 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2322" data-name="Rectangle 2322" width="12" height="2" rx="1"
+                    transform="translate(558 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2266" data-name="Rectangle 2266" width="12" height="2" rx="1"
+                    transform="translate(558 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2323" data-name="Rectangle 2323" width="12" height="2" rx="1"
+                    transform="translate(558 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2234" data-name="Rectangle 2234" width="12" height="2" rx="1"
+                    transform="translate(558 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2324" data-name="Rectangle 2324" width="12" height="2" rx="1"
+                    transform="translate(558 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2267" data-name="Rectangle 2267" width="12" height="2" rx="1"
+                    transform="translate(558 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2325" data-name="Rectangle 2325" width="12" height="2" rx="1"
+                    transform="translate(558 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2208" data-name="Rectangle 2208" width="12" height="2" rx="1"
+                    transform="translate(423 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2276" data-name="Rectangle 2276" width="12" height="2" rx="1"
+                    transform="translate(423 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2240" data-name="Rectangle 2240" width="12" height="2" rx="1"
+                    transform="translate(423 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2287" data-name="Rectangle 2287" width="12" height="2" rx="1"
+                    transform="translate(423 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2225" data-name="Rectangle 2225" width="12" height="2" rx="1"
+                    transform="translate(423 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2277" data-name="Rectangle 2277" width="12" height="2" rx="1"
+                    transform="translate(423 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2247" data-name="Rectangle 2247" width="12" height="2" rx="1"
+                    transform="translate(423 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2305" data-name="Rectangle 2305" width="12" height="2" rx="1"
+                    transform="translate(423 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2216" data-name="Rectangle 2216" width="12" height="2" rx="1"
+                    transform="translate(531 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2326" data-name="Rectangle 2326" width="12" height="2" rx="1"
+                    transform="translate(531 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2260" data-name="Rectangle 2260" width="12" height="2" rx="1"
+                    transform="translate(531 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2327" data-name="Rectangle 2327" width="12" height="2" rx="1"
+                    transform="translate(531 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2235" data-name="Rectangle 2235" width="12" height="2" rx="1"
+                    transform="translate(531 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2328" data-name="Rectangle 2328" width="12" height="2" rx="1"
+                    transform="translate(531 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2261" data-name="Rectangle 2261" width="12" height="2" rx="1"
+                    transform="translate(531 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2329" data-name="Rectangle 2329" width="12" height="2" rx="1"
+                    transform="translate(531 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2213" data-name="Rectangle 2213" width="12" height="2" rx="1"
+                    transform="translate(477 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2306" data-name="Rectangle 2306" width="12" height="2" rx="1"
+                    transform="translate(477 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2254" data-name="Rectangle 2254" width="12" height="2" rx="1"
+                    transform="translate(477 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2307" data-name="Rectangle 2307" width="12" height="2" rx="1"
+                    transform="translate(477 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2230" data-name="Rectangle 2230" width="12" height="2" rx="1"
+                    transform="translate(477 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2308" data-name="Rectangle 2308" width="12" height="2" rx="1"
+                    transform="translate(477 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2255" data-name="Rectangle 2255" width="12" height="2" rx="1"
+                    transform="translate(477 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2309" data-name="Rectangle 2309" width="12" height="2" rx="1"
+                    transform="translate(477 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2220" data-name="Rectangle 2220" width="12" height="2" rx="1"
+                    transform="translate(585 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2330" data-name="Rectangle 2330" width="12" height="2" rx="1"
+                    transform="translate(585 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2268" data-name="Rectangle 2268" width="12" height="2" rx="1"
+                    transform="translate(585 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2331" data-name="Rectangle 2331" width="12" height="2" rx="1"
+                    transform="translate(585 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2237" data-name="Rectangle 2237" width="12" height="2" rx="1"
+                    transform="translate(585 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2332" data-name="Rectangle 2332" width="12" height="2" rx="1"
+                    transform="translate(585 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2269" data-name="Rectangle 2269" width="12" height="2" rx="1"
+                    transform="translate(585 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2333" data-name="Rectangle 2333" width="12" height="2" rx="1"
+                    transform="translate(585 1588) rotate(-180)" fill="#282f49" />
+            </g>
+        </svg>
+    </div>
+    
+</section>
+
+
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">About Me</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            
+            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+                <div class="image d-flex px-5">
+                    <img src="/images/me.png" class="img-thumbnail mx-auto rounded-circle" alt="">
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                I&rsquo;m a current graduate student, pursing my Masters in Computer Science. I like to build ML models and use them for better use with cloud technologies. I am into web dev and now I&rsquo;m exploring the evolving technologies in web apps!
+
+                
+                
+                <br/>
+                <br/>
+                <p>Here are a few programming languages and tools I&#39;ve been working on:</p>
+                <div class="skills-container">
+                    
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=python" alt="python">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=java" alt="java">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=r" alt="r">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=matlab" alt="matlab">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=ruby" alt="ruby">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=cpp" alt="cpp">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=html" alt="html">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=css" alt="css">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=javascript" alt="javascript">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=php" alt="php">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=react" alt="react">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=nodejs" alt="nodejs">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=rails" alt="rails">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=mongodb" alt="mongodb">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=mysql" alt="mysql">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=sqlite" alt="sqlite">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=aws" alt="aws">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=gcp" alt="gcp">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=docker" alt="docker">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=kubernetes" alt="kubernetes">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=netlify" alt="netlify">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=pytorch" alt="pytorch">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=tensorflow" alt="tensorflow">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=git" alt="git">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=postman" alt="postman">
+                            </a>
+                            </span>
+                        
+                            
+                            <span class="skill-item">
+                            <a href="https://skillicons.dev/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=vscode" alt="vscode">
+                            </a>
+                            </span>
+                        
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Experience</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link active bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='USDA-ARS-SCINet-Jun-2023---Aug-2023-tab'
+                                data-bs-target='#pills-USDA-ARS-SCINet-Jun-2023---Aug-2023'
+                                aria-controls='USDA-ARS-SCINet-Jun-2023---Aug-2023' 
+                            >
+                                USDA ARS SCINet
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Deloitte-Jun-2019---Jul-2022-tab'
+                                data-bs-target='#pills-Deloitte-Jun-2019---Jul-2022' 
+                                aria-controls='Deloitte-Jun-2019---Jul-2022'
+                            >
+                                Deloitte
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Deloitte-Jan-2019---Jun-2019-tab'
+                                data-bs-target='#pills-Deloitte-Jan-2019---Jun-2019' 
+                                aria-controls='Deloitte-Jan-2019---Jun-2019'
+                            >
+                                Deloitte
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='NCSU-ARoS-Lab-Sep-2023---Now-tab'
+                                data-bs-target='#pills-NCSU-ARoS-Lab-Sep-2023---Now' 
+                                aria-controls='NCSU-ARoS-Lab-Sep-2023---Now'
+                            >
+                                NCSU ARoS Lab
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='PAL-Research-Group-Oct-2023---Now-tab'
+                                data-bs-target='#pills-PAL-Research-Group-Oct-2023---Now' 
+                                aria-controls='PAL-Research-Group-Oct-2023---Now'
+                            >
+                                PAL Research Group
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+                        
+                        
+                        <div 
+                            class="tab-pane fade show active bg-transparent" 
+                            role="tabpanel"
+                            id='pills-USDA-ARS-SCINet-Jun-2023---Aug-2023'
+                            aria-labelledby='pills-USDA-ARS-SCINet-Jun-2023---Aug-2023-tab'
+                        >
+                            <div>
+                                <span class="h4">Data Science Intern</span>
+                                <small>-</small>
+                                <a href="none" target="_blank">USDA ARS SCINet</a>
+                                <div class="pb-1">
+                                    <small>Jun 2023 - Aug 2023</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=I&#32;worked&#32;as&#32;a&#32;research&#32;data&#32;science&#32;intern&#32;by&#32;collaborating&#32;with&#32;a&#32;lab&#32;based&#32;in&#32;Utah.
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            <ul>
+<li>Analyzed drone images for genotypes yield prediction using data mining &amp; image processing.</li>
+<li>Developed a neural network model using CNN and VGG19 to automate stem density calculation in wheatgrass images, potentially reducing resources costs by 80%.</li>
+</ul>
+
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Deloitte-Jun-2019---Jul-2022'
+                            aria-labelledby='pills-Deloitte-Jun-2019---Jul-2022-tab'
+                        >
+                            <div>
+                                <span class="h4">Software App Developer</span>
+                                <small>-</small>
+                                <a href="https://www2.deloitte.com/" target="_blank">Deloitte</a>
+                                
+                                <div class="pb-1">
+                                    <small>Jun 2019 - Jul 2022</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=My&#32;role&#32;was&#32;a&#32;culmination&#32;of&#32;App&#32;Development,&#32;Database&#32;Administration&#32;and&#32;Data&#32;Engineer.
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>I worked here for 3 years, while implementing key Software practices into workspace</p>
+<ul>
+<li>Designed and implemented efficient data pipelines on Deloitte&rsquo;s personnel data warehouses using BODS and SDI Flowgraphs and generating essential KPI metrics using HANA SQL DBMS. This resulted in a 30% reduction in budget and project time and significant cost savings for the firm, while maintaining within Customer SLA.</li>
+<li>Automated data loads &amp; test plans with Shell Scripts, Python, SAP API&rsquo;s and ETL mechanisms with SQL procedures which eliminated hierarchy refresh redundancy and saved 50% of manual efforts.</li>
+<li>Deployed effective smoke test cases, averaging 10+ bugs per app which expedited pre-production resolution and effective development. Also migrated various legacy apps to SAP HANA Cloud.</li>
+</ul>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Deloitte-Jan-2019---Jun-2019'
+                            aria-labelledby='pills-Deloitte-Jan-2019---Jun-2019-tab'
+                        >
+                            <div>
+                                <span class="h4">Software Intern</span>
+                                <small>-</small>
+                                <a href="https://www2.deloitte.com/" target="_blank">Deloitte</a>
+                                
+                                <div class="pb-1">
+                                    <small>Jan 2019 - Jun 2019</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Software&#32;Intern&#32;at&#32;Deloitte
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>I worked as an Intern at Deloitte and focused more on learning SQL constructs, SAP tech stack and Python integration into my workflow.</p>
+<ul>
+<li>Developed a Python automation script with XML parsing and HANA tools, automating the generation of base source objects for hierarchical fields, reducing 60% manual documentation efforts.</li>
+<li>Designed a text search engine using Python, NLP for fetching most similar records from a large dataset.</li>
+</ul>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-NCSU-ARoS-Lab-Sep-2023---Now'
+                            aria-labelledby='pills-NCSU-ARoS-Lab-Sep-2023---Now-tab'
+                        >
+                            <div>
+                                <span class="h4">Graduate Student Worker</span>
+                                <small>-</small>
+                                <a href="https://research.ece.ncsu.edu/aros/" target="_blank">NCSU ARoS Lab</a>
+                                
+                                <div class="pb-1">
+                                    <small>Sep 2023 - Now</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=This&#32;is&#32;part&#32;of&#32;my&#32;independent&#32;study,&#32;I&#39;m&#32;currently&#32;volunteering&#32;for&#32;the&#32;lab.
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>I&rsquo;m assisting the staff in the lab with technical expertise in ML and Data Science capacity. Currently working on blueberry segmentation problem.</p>
+<ul>
+<li>Computed a segmentation dataset using Computer Vision techniques, Segment Anything Model (SAM) to obtain blueberry masks in images.</li>
+<li>Deployed a segmentation model to predict blueberry masks using RoboFlow MLOps, with 98% accuracy &amp; mAP.</li>
+</ul>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-PAL-Research-Group-Oct-2023---Now'
+                            aria-labelledby='pills-PAL-Research-Group-Oct-2023---Now-tab'
+                        >
+                            <div>
+                                <span class="h4">Graduate Student Assistant</span>
+                                <small>-</small>
+                                <a href="https://faculty.cnr.ncsu.edu/lokendrapal/research/" target="_blank">PAL Research Group</a>
+                                
+                                <div class="pb-1">
+                                    <small>Oct 2023 - Now</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=This&#32;is&#32;a&#32;part&#32;time&#32;assistantship&#32;position&#32;at&#32;NCSU
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                I&rsquo;m assisting the staff in the lab with technical expertise in ML and Data Science capacity. Currently working on data mining problems to research over waste management.
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="education" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Education</h3>
+        <div class="row justify-content-center py-5">
+            
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2022 - 2024</small>
+                                </div>
+                                <h5 class="card-title">Masters in Computer Science</h5>
+                                
+                                
+                                <a href="https://www.csc.ncsu.edu/" target="_blank">
+                                    <h6>
+                                    North Carolina State University, Raleigh
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1">
+                                    GPA:
+                                    <i>
+                                        <small>4.0 out of 4.0</small>
+                                    </i> 
+                                </div>
+                                
+                                <div class="py-1 education-content">
+                                    <p>Coursework:</p>
+<ul>
+<li>Design &amp; Analysis of Algorithms, Database Management Concepts &amp; System, Automated Learning Data Analysis</li>
+<li>Object Oriented Design &amp; Development, Neural Networks, Experimental Statistics, Cloud Engg, Software Engg</li>
+</ul>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2015 - 2019</small>
+                                </div>
+                                <h5 class="card-title">Bachelor of Engineering in Computer Science and Engineering</h5>
+                                
+                                
+                                <a href="https://www.uceou.edu/dept-cse.php" target="_blank">
+                                    <h6>
+                                    University College of Engineering, Osmania University, Hyderabad, India
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1">
+                                    GPA:
+                                    <i>
+                                        <small>9.04 out of 10.0</small>
+                                    </i> 
+                                </div>
+                                
+                                <div class="py-1 education-content">
+                                    <p>Coursework:</p>
+<ul>
+<li>Data Structures, Operating Systems, Web Development, Programming Languages Paradigms, Object Oriented Programming, DBMS</li>
+<li>Cloud Computing, Distributed Systems, Computer Networks, Internet Protocols, Data Science, Data Mining, Artificial Intelligence</li>
+</ul>
+<p>Extracurricular Activities:</p>
+<ul>
+<li>Organizer in various technical and cultural tests in UCEOU</li>
+<li>Member of YOUVA, an NGO established in UCEOU that helps the society for better cause</li>
+</ul>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Projects</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Sync-Ends Library">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/git_repo.png" alt="Sync-Ends Library">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Github</span>
+                            
+                            <span class="badge badge-secondary">Github actions</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Sync-Ends Library</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A Python Library that can detect any change across APIs &amp; instantly send notifications on Slack, Teams &amp; Email.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/smarabattula/Sync-Ends" target="_blank">
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Online Bookshop App">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/git_repo.png" alt="Online Bookshop App">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Ruby</span>
+                            
+                            <span class="badge badge-secondary">Ruby on Rails</span>
+                            
+                            <span class="badge badge-secondary">SQLite</span>
+                            
+                            <span class="badge badge-secondary">Github</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Online Bookshop App</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            a RESTful bookshop app with Ruby on Rails, SQLite, &amp; GitHub pipelines, with features like login, payment gateway, transaction history, user reviews &amp; URL restrictions.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/smarabattula/Online-Book-Shop" target="_blank">
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="KAB Systems LLC Website">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/git_repo.png" alt="KAB Systems LLC Website">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Hugo</span>
+                            
+                            <span class="badge badge-secondary">Bootstrap</span>
+                            
+                            <span class="badge badge-secondary">Javascript</span>
+                            
+                            <span class="badge badge-secondary">AWS</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">KAB Systems LLC Website</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A static website for KAB Systems LLC using Hugo CMS and applied CI/CD pipelines via Git. Deployed on AWS and Netlify.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://gitlab.com/smaraba/kab-systems" target="_blank">
+                                <i class="fab fa-2x fa-gitlab"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://courageous-lamington-12bca5.netlify.app/" target="_blank">
+                                Demo
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Automobile Service Management System">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/git_repo.png" alt="Automobile Service Management System">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Java</span>
+                            
+                            <span class="badge badge-secondary">SQL</span>
+                            
+                            <span class="badge badge-secondary">SQLPlus</span>
+                            
+                            <span class="badge badge-secondary">Github</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Automobile Service Management System</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            a car servicing Java app featuring employee management, service scheduling, customer cart and invoicing.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/smarabattula/autor" target="_blank">
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Blueberry Segmentation">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/git_repo.png" alt="Blueberry Segmentation">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">SAM</span>
+                            
+                            <span class="badge badge-secondary">Roboflow</span>
+                            
+                            <span class="badge badge-secondary">Computer Vision</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Blueberry Segmentation</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A blueberry segmentation dataset using Computer Vision techniques, Segment Anything Model (SAM) to identify area of Blueberries in a given image.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/smarabattula/aros-blueberry" target="_blank">
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Terrain Identification">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/git_repo.png" alt="Terrain Identification">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Tensorflow</span>
+                            
+                            <span class="badge badge-secondary">Time Series Analysis</span>
+                            
+                            <span class="badge badge-secondary">Keras</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Terrain Identification</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A deep learning model to identify &amp; classify different terrains from inertial measurement unit(IMU) time series data.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/smarabattula/IMU-terrain-classification" target="_blank">
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Disaster Tweet Analysis">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/git_repo.png" alt="Disaster Tweet Analysis">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Data Mining</span>
+                            
+                            <span class="badge badge-secondary">NLP</span>
+                            
+                            <span class="badge badge-secondary">SKLearn</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Disaster Tweet Analysis</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            An NLP model to verify if a given tweet implies disaster or not
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/smarabattula/Verification-of-Disaster-Tweet-Authenticity" target="_blank">
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Histopathologic Cancer Detection">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/git_repo.png" alt="Histopathologic Cancer Detection">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">TensorFlow</span>
+                            
+                            <span class="badge badge-secondary">VGG19</span>
+                            
+                            <span class="badge badge-secondary">Transfer Learning</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Histopathologic Cancer Detection</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A deep learning model (CNNs,VGG19) to identify metastatic cancer in colored image patches, using Transfer Learning and Neural Networks
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/smarabattula/histopathologic-cancer-detection" target="_blank">
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Text Search Engine">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/git_repo.png" alt="Text Search Engine">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">NLP</span>
+                            
+                            <span class="badge badge-secondary">search engine</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Text Search Engine</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            NLP based search engine that retrieves top 5 similar articles to input, imitates StackOverFlow search functionality.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/smarabattula/histopathologic-cancer-detection" target="_blank">
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Achievements</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://github.com/expertiza/expertiza" title="Open Source Contributions to Expertiza" target="_blank">
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Open Source Contributions to Expertiza</h5>
+                            <div class="card-text secondary-font">
+                                Expertiza is a web application where students can submit and peer-review learning objects (articles, code, web sites, etc). It is used in select courses at NC State and by professors at several other colleges and universities.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="JP Morgan Chase Code for Good Cause 2019 Finalist">
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">JP Morgan Chase Code for Good Cause 2019 Finalist</h5>
+                            <div class="card-text secondary-font">
+                                Finalist in JP Morgan Chase’s Code for Good Hackathon, where an end-to-end android application was delivered for a Non-Profit organization to facilitate volunteering work for their users.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="Deloitte Work Award">
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Deloitte Work Award</h5>
+                            <div class="card-text secondary-font">
+                                Led end-to-end development of a large-scale project, overseeing design architecture and peer management, and received recognition and an award for exceptional contributions.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="Certifications">
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Certifications</h5>
+                            <div class="card-text secondary-font">
+                                Completed certifications in Cloud Computing, Data Science, Data Mining, Machine Learning &amp; Deep Learning courses.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Get in Touch</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-md-5">
+                <div class="col-md-8 py-3">
+                    <div class="text-center">
+                        Feel free to contact me on my email here! I&rsquo;m open for positions!
+                    </div>
+                    
+                    <div class="text-center pt-3">
+                        <a href="mailto:smaraba@ncsu.edu" class="btn">
+                            Hire me
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-status"></div>
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/smarabattula" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://linkedin.com/in/smarabattula" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <div class="pb-2">
+                <a href="" title="Sasank&#39;s Portfolio">
+                    <img alt="Footer logo" src="/images/favicon.png"
+                        height="40px" width="40px">
+                </a>
+            </div>
+            &copy; 2023  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("light")) {
+        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
+    }
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
